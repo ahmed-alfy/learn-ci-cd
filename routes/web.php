@@ -21,9 +21,7 @@ Route::get('dashboard', function () {
     ]);
 })->name('dashboard');
 
-Route::get('register', function () {
-    return Inertia::render('Auth/Register');
-})->name('register');
+Route::inertia('register','Auth/Register')->name('register');
 
 Route::post('register', [\App\Http\Controllers\AuthController::class, 'register'])
     ->name('register.store');
