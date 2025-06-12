@@ -1,0 +1,9 @@
+name: 02 basic events
+on: push
+
+jobs:
+  print-hello-world:
+  runs-on: ubuntu-latest
+  steps:
+    - name: Print Hello world
+      run: echo "hello world from basic events"
