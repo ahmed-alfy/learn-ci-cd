@@ -32,3 +32,6 @@ Route::post('login', [\App\Http\Controllers\AuthController::class, 'login'])
 
 Route::post('logout', [\App\Http\Controllers\AuthController::class, 'logout'])
     ->name('logout');
+
+
+// change to conform push paths event
