@@ -1,12 +1,15 @@
 name: 03 basic events filter
 on: 
-  pull_request:
-    types: 
-      - closed
+  # pull_request:
+  #   types: 
+  #     - closed
   push:
-    branches:
-      - main
-
+    # branches:
+    #   - main
+    # branches-ignore:
+    #   - feature/workflow_events
+    paths:
+      - routes/web.php
 jobs:
   print-hello-world:
     runs-on: ubuntu-latest
