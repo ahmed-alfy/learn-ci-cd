@@ -1,0 +1,12 @@
+name: 04 basic events external filter
+on: 
+  repository_dispatch:
+    types: 
+      - basic-events-external-filter
+ 
+jobs:
+  print-hello-world:
+    runs-on: ubuntu-latest
+    stpeps:
+      - name: Print Hello world
+        run: echo "hello world from basic events external filter"
