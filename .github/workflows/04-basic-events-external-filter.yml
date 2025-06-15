@@ -2,7 +2,8 @@ name: 04 basic events external filter
 on: 
   repository_dispatch:
     types: 
-      - basic-events-external-filter
+      # was triggerd by github api with create-a-repository-dispatch-event using curl
+      - basic-events-external-filter 
  
 jobs:
   print-hello-world:
