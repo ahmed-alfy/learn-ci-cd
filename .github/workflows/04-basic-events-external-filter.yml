@@ -7,6 +7,6 @@ on:
 jobs:
   print-hello-world:
     runs-on: ubuntu-latest
-    stpeps:
+    stpes:
       - name: Print Hello world
         run: echo "hello world from basic events external filter"
