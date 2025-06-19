@@ -7,6 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print context Data
-        #run: echo ${{github}}
-        run: echo ${{github.actor}}
+        # run: echo ${{github}}
+        # run: echo ${{github.actor}}
+        run: echo ${{github.event_name}}
   
