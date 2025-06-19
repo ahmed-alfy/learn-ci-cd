@@ -1,0 +1,10 @@
+name: 06 basic context
+
+on: workflow_dispatch
+
+jobs:
+  print-hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print context Data
+        run: echo "Context Data"
