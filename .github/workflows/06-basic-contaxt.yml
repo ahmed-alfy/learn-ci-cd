@@ -1,5 +1,5 @@
 name: 06 basic context
-run-name: github context run-name
+run-name: github context run-name by ${{github.actor}}
 on: workflow_dispatch
 
 jobs:
