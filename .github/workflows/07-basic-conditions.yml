@@ -1,0 +1,15 @@
+name: 07 basic conditions
+
+on : 
+  pull_request:
+    branches: [main]
+    types:
+      - closed
+
+jobs:
+  print-hello-world:
+    runs-on: ubuntu-latest
+    if: github.events.pull_request.merged == true
+    steps:
+      - name: Print Hello world
+        run: echo "hello world from basic conditions"
