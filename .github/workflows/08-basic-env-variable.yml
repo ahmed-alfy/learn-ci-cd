@@ -13,3 +13,6 @@ jobs:
         env:
           MY_ENV_VAR: "Hello from environment variable"
         run: echo ${{ env.MY_ENV_VAR }}
+        
+      - name : print config variable
+        run: echo "The config variable is ${{ vars.MY_CONFIG_VAR }}"
