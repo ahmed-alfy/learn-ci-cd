@@ -19,3 +19,9 @@ jobs:
     steps:
       - name: print config variable
         run: echo "The config variable is ${{ vars.MY_CONFIG_VAR }}"
+
+  print-secret-variable:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print SECRET variable
+        run: echo "The config variable is ${{ secrets.MY_SECRET }}"
